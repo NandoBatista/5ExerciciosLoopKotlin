@@ -48,21 +48,24 @@ fun main(args: Array<String>) {
     println("A média de todas as notas é: ${soma/cont}")
 }
 
-    //INCOMPLETO 4 - Crie um programa que leia 10 valores e identifique a quantidade de números pares e ímpares*/
+    4 - Crie um programa que leia 10 valores e identifique a quantidade de números pares e ímpares*/
 
-  var valor = 0
-  var soma = 0
-  var cont = -1
+    var cont = 1
+    var contPar = 0
+    var contImpar = 0
 
-  println("Digite 10 números abaixo e termine com o 0: ")
-
-    while(valor%2 == 0){
-        valor = readLine()!!.toInt()
-        soma += valor
-        cont++
-        }
-    println("Quantidade de números pares: ${cont}")
+    while(cont<=10){
+     println("Digite um número: ")
+    var numero = readLine()!!.toInt()
+    if(numero%2==0){
+        contPar++
+    }else {
+        contImpar++
+    }
+    cont++
 }
+println("A quantidade de números digitados pares foram $contPar")
+println("A quantidade de números digitados impares foram $conntImpar")
 
     //INCOMPLETO 5 - Crie um programa que leia um número do teclado até que encontre um número igual a zero. No final, mostre:
 
